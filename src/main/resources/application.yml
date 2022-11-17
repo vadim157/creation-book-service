@@ -1,0 +1,14 @@
+
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          auto-add-partitions: true
+          replication-factor: 1
+      bindings:
+        output:
+          destination: buckdestinationet
+          group: group
+server:
+  port: 0
